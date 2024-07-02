@@ -13,7 +13,7 @@ else:
         fnum=cardPoints[0]
         lnum=cardPoints[n-1]
         
-        if fnum==lnum:
+        if fnum==lnum and n>=4:
             # if first and last are equal then we choose based on the next of first and previous of last
             if cardPoints[n-2]>cardPoints[1]:
                 score+=lnum
